@@ -1,6 +1,6 @@
 package com.sunil.solid;
 
-public class Cube implements Shape{
+public class Cube implements Shape, ThreeDShape{
 
     private final int length;
 

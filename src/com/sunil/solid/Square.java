@@ -16,10 +16,5 @@ public class Square  implements Shape {
         return Math.PI * Math.pow(getLength(), 2);
     }
 
-    @Override
-    public double volume() {
-        throw new RuntimeException("I am forced to implement this method");
-    }
-
 }
 
