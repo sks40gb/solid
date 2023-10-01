@@ -11,10 +11,9 @@ public class App {
         Cube cube = new Cube(2);
         List<Shape> shapes = List.of(circle, square, cube);
 
-        int sum = areaCalculator.sum(shapes);
         ShapesPrinter printer =  new ShapesPrinter();
-        System.out.println(printer.json(sum));
-        System.out.println(printer.csv(sum));
+        System.out.println(printer.json(shapes));
+        System.out.println(printer.csv(shapes));
 
     }
 }
