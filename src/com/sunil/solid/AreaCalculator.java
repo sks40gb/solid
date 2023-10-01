@@ -18,4 +18,14 @@ public class AreaCalculator{
         return sum;
     }
 
+    public String json(List<Object> shapes){
+        int sum = sum(shapes);
+        return "{sum : %s}".formatted(sum);
+    }
+
+    public String csv(List<Object> shapes){
+        int sum = sum(shapes);
+        return "sum,%s".formatted(sum);
+    }
+
 }

@@ -11,7 +11,9 @@ public class App {
         List<Object> shapes = List.of(circle, square);
 
         int sum = areaCalculator.sum(shapes);
-        System.out.println("Total sum : " + sum);
+        //System.out.println("Total sum : " + sum);
+        System.out.println(areaCalculator.json(shapes));  //{sum : 414}
+        System.out.println(areaCalculator.csv(shapes));   //sum,414
 
     }
 }
