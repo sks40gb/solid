@@ -1,6 +1,6 @@
 package com.sunil.solid;
 
-public class Cube {
+public class Cube implements Shape{
 
     private final int length;
 
@@ -10,6 +10,11 @@ public class Cube {
 
     public int getLength() {
         return length;
+    }
+
+    @Override
+    public double area() {
+        return Math.PI * Math.pow(getLength(), 6);
     }
 
 }

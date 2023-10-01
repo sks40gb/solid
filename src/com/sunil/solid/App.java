@@ -9,7 +9,7 @@ public class App {
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Cube cube = new Cube(2);
-        List<Object> shapes = List.of(circle, square, cube);
+        List<Shape> shapes = List.of(circle, square, cube);
 
         int sum = areaCalculator.sum(shapes);
         ShapesPrinter printer =  new ShapesPrinter();
