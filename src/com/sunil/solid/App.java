@@ -9,12 +9,13 @@ public class App {
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Cube cube = new Cube(2);
-        List<Shape> shapes = List.of(circle, square, cube);
+        NoShape noShape = new NoShape();
+        List<Shape> shapes = List.of(circle, square, cube, noShape);
 
         int sum = areaCalculator.sum(shapes);
         ShapesPrinter printer =  new ShapesPrinter();
-        System.out.println(printer.json(sum));  //{sum : 478}
-        System.out.println(printer.csv(sum));   //sum,478
+        System.out.println(printer.json(sum));
+        System.out.println(printer.csv(sum));
 
     }
 }
