@@ -13,9 +13,12 @@ public class AreaCalculator{
             } else if (shape instanceof Square) {
                 Square square= (Square) shape;
                 sum +=  Math.pow(square.getLength(),2);
+            } else if (shape instanceof Cube) {
+                Cube square= (Cube) shape;
+                sum += Math.pow(square.getLength(), 6);
             }
         }
         return sum;
     }
-    
+
 }
