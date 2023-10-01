@@ -17,4 +17,10 @@ public class Cube implements Shape{
         return Math.PI * Math.pow(getLength(), 6);
     }
 
+    @Override
+    public double volume() {
+        return Math.pow(getLength(), 3);
+    }
+
+
 }
