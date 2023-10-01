@@ -15,5 +15,10 @@ public class Circle implements Shape{
     public double area() {
        return Math.PI * Math.pow(getRadius(), 2);
     }
+
+    @Override
+    public double volume() {
+        throw new RuntimeException("I am forced to implement this method");
+    }
 }
 
