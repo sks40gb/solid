@@ -16,9 +16,5 @@ public class Circle implements Shape{
        return Math.PI * Math.pow(getRadius(), 2);
     }
 
-    @Override
-    public double volume() {
-        throw new RuntimeException("I am forced to implement this method");
-    }
 }
 
