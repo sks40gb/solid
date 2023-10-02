@@ -4,15 +4,19 @@ import java.util.List;
 
 public class ShapesPrinter {
 
-    private AreaCalculator areaCalculator = new AreaCalculator();
+    private final Calculator calculator;
+
+    public ShapesPrinter(Calculator calculator){
+        this.calculator = calculator;
+    }
 
     public String json(List<Shape> shapes){
-        int sum = areaCalculator.sum(shapes);
+        int sum = calculator.sum(shapes);
         return "{sum : %s}".formatted(sum);
     }
 
     public String csv(List<Shape> shapes){
-        int sum = areaCalculator.sum(shapes);
+        int sum = calculator.sum(shapes);
         return "sum,%s".formatted(sum);
     }
 
