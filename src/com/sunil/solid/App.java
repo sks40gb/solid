@@ -11,7 +11,7 @@ public class App {
         Cube cube = new Cube(2);
         List<Shape> shapes = List.of(circle, square, cube);
 
-        ShapesPrinter printer =  new ShapesPrinter();
+        ShapesPrinter printer =  new ShapesPrinter(new AreaCalculator());
         System.out.println(printer.json(shapes));
         System.out.println(printer.csv(shapes));
 
