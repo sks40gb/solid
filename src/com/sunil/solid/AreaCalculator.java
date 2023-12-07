@@ -2,18 +2,12 @@ package com.sunil.solid;
 
 import java.util.List;
 
-public class AreaCalculator{
+public class AreaCalculator implements Calculator{
 
-    public int sum(List<Object> shapes) {
+    public int sum(List<Shape> shapes) {
         int sum = 0;
-        for (Object shape : shapes) {
-            if (shape instanceof Circle) {
-                Circle circle = ((Circle) shape);
-                sum += Math.PI * Math.pow(circle.getRadius(), 2);
-            } else if (shape instanceof Square) {
-                Square square= (Square) shape;
-                sum +=  Math.pow(square.getLength(),2);
-            }
+        for (Shape shape : shapes) {
+            sum += shape.area();
         }
         return sum;
     }
